@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #ff99cc;
+            width: 400px;
+            height: 600px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .card h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card button {
+            background-color: white;
+            color: #ff66b2;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .card button:hover {
+            background-color: #ff66b2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Birthday!</h1>
+        <p>Babe, you’re 20 already, a young adult. I really wish you the best, babe. We’re all proud of you and I want you to know that. Thanks to your mom and dad, they gave birth to a beautiful young woman.</p>
+        <p>You’re the most beautiful person ever, I swear. I love you every single day. Another year has passed and I know that you’re still growing as a person, and I’m proud to witness everything that you’re doing.</p>
+        <p>I know you’re still figuring things out but you’ll get there. The endless efforts you gave is something I treasure. I’m sorry this is all I got for now, but when the day comes, I’ll provide everything for you and I promise that.</p>
+        <p>I love you, babe. You deserve everything good in this world. Happy 20th!</p>
+        <p>Your Favorite Person,<br>Zio</p>
+        <button onclick="playAudio()">Press for a surprise</button>
+        <audio id="birthdayAudio">
+            <source src="hbd.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("birthdayAudio");
+            audio.play();
+        }
+    </script>
+
+</html>
